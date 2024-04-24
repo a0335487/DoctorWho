@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: seagreen;
+    background: url('../img/space.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    
+    width: 10%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.logo .kem-logo{
+    width: 100%;
+}
+
+/*BEGIN-PAGE*/
+.intro {
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+.intro h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 7rem;
+}
+.button-start {
+    display: block;
+    margin: 40px auto; 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 50px;
+    width: 40%;
+    border: 3px solid #fff;
+    border-radius: 45px;
+    /* transition: all 0.3s; */
+}
+.button-start:hover{
+    width: 42%;
+    transition: all 0.3s;
+}
+@media only screen and (max-width: 1800px){
+    .intro h1{
+        /* margin-top: -150px; */
+        font-size: 5rem;
+    }
+}
+
+
+
+/*LOGIN*/
+.wrapper{
+    max-width: 70%;
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.wrapper .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.register-link p a{
+    text-decoration: underline;
+    color: rgb(0, 207, 0);
+    font-weight: 600;
+}
+.register-link p a:hover{
+    /* text-decoration: none; */
+    color: green;
+}
+
+
+/*START-PAGE*/
+.wrapper2{
+    width: 520px;
+}
+.wrapper h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+.wrapper h2 span{
+    color: green;
+}
+.input-box a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: auto;
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.input-box a:hover{
+    width: 95%;
+    transition: all 0.3s;
+}
+.input-box a:hover + i {
+    right: 35px;
+    transition: all 0.3s;
+}
+.input-box .start{
+    background: green;
+    border-color: green;
+    /* box-shadow: 2px 2px 25px 1px green; */
+}
+.input-box .setting{
+    background: #fff;
+    color:#000;
+}
+.input-box .achiev{
+    background: rgb(190, 0, 0);
+    border-color: rgb(190, 0, 0);
+}
+.user{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 30px;
+    margin-top: -15px;
+    
+    left: 15px;
+}
+.user span{
+    position: relative;
+}
+.user span i{
+    position: absolute;
+    font-size: 20px;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*PAGE_1*/
+.menu{
+    position: absolute;
+    top:20px;
+    left: 15px;
+    padding: 25px;
+    background: rgb(190, 0, 0);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menu:hover{
+    background: rgb(146, 0, 0);
+}
+.menu i{
+    font-size: 25px;
+}
+
+.menu_block{
+    display: none;
+    background: rgb(190, 0, 0);
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    left: 15px;
+    top:110px;
+    border-radius: 20px;
+}
+.menu_block a{
+    text-align: center;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 60px 20px 60px;
+    border-radius: 15px;
+   
+}
+.menu_block a i{
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 18px;
+}
+.menu_block a:hover{
+    background: rgb(146, 0, 0);
+}
+
+
+.scale{
+    position: absolute;
+    top:20px;
+    left: 100px;
+    padding: 30px;
+    padding-left: 60px;
+    background: green;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.scale:hover{
+    padding-right: 70px;
+    background: rgb(0, 100, 0);
+    transition: all 0.3s;
+}
+.scale p{
+ position: relative;
+}
+.scale p i{
+   position: absolute;
+   left: -33px;
+   top: -5px;
+   font-size: 25px;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    /* height: 200px; */
+    padding: 50px 260px 100px 260px;
+    width: 100%;
+    background: #000000c7;
+    color: #fff;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+footer .text{
+    position: relative;
+}
+footer .text p{
+    font-size: 20px;
+}
+footer .text p b{
+    color: rgb(0, 226, 0);
+}
+footer .next{
+    position: absolute;
+    width: 80px;
+    bottom: 60px;
+    right: 100px;
+}
+footer .next-but{
+    width: 100%;
+}
+footer .next-but:hover{
+    width: 110%;
+    transition: all 0.3s;
+}
+footer .prev{
+    position: absolute;
+    width: 80px;
+    bottom: 60px;
+    left: 100px;
+}
+.formula_1{
+    height: 60px;
+    margin-bottom: -10px;
+}
+.formula_0{
+    height: 40px;
+    margin-bottom: -10px;
+}
+.formula_2{
+    /* display: flex;
+    margin: auto; */
+    width: 900px;
+}
+
+footer label{
+    font-size: 20px;
+}
+footer label b{
+    color:rgb(0, 226, 0);
+}
+footer input{
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 20px;
+    width: 300px;
+    border: 2px solid green;
+    border-radius: 20px; 
+    outline: none;
+}
+
+.check-btn{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    padding: 15px;
+    border-radius: 40px;
+    color: #fff;
+    background: green;
+    border: none;
+}
+.check-btn:hover{
+    width: 450px;
+    background: rgb(0, 92, 0);
+    transition: all 0.3s;
+}
